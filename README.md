@@ -3,7 +3,7 @@ Paul Senzee's perfect hash poker hand evaluator. Ported to Rust by me.
 
 Compile with 
 
-    rustc -C overflow-checks=off poker.rs
+    rustc -O -C overflow-checks=off poker.rs
 
 You need to turn off overflow checks, since the algorithm acts on bits and the logic is built so that the integer overflow is the way to generate a perfect hash.
 
